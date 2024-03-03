@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purba's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c976672c8d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+
+<body>
+    <!-- home section  -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Purba.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="flex">
+                <div class="mypic">
+                    <img class="mypic" src="1695014325943.png" width="90%" alt="" srcset="">
+                </div>
+                <div class="header-text">
+                    <p>Video Editor</p>
+                    <h1>Hi,I'm <span>Purba</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about section  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="aboutpic.jpg" width="100px" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p class="aboutp">As a student, I have actively search for opportunities to gain practical experience and develop essential skills in various fields. I have undertaken part-time roles that have allowed me to balance my academic commitments while contributing to professional environments. These experiences have provided me with valuable insights into teamwork, time management, and problem-solving. Whether through freelance projects, or volunteer work, I have consistently demonstrated a strong work ethic and a willingness to learn.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Adobe Premiere Pro</span><br>For Video Editing</li>
+                            <li><span>Adobe Photoshop</span><br>For Photo Editing And Designing</li>
+                            <li><span>Blender and Maya</span><br>For Animation</li>
+                            <li><span>Enthusiastic Learner</span><br>A Learner</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2020</span><br>Passed MP With 90%</li>
+                            <li><span>2022</span><br>Passed HS with 64%
+                            <li>
+                            <li><span>2022</span><br>Pursuring BCA In Brainware University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- portfolio  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/S3VMal2C4aFAtBoSn8xiCD7_ddT1tl29K41vlxYNcvE/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9wbHVz/LnVuc3BsYXNoLmNv/bS9wcmVtaXVtX3Bo/b3RvLTE2NjMwNDAz/MTY1NTktODY4NGNh/NDVkN2U5P3E9ODAm/dz0xMDAwJmF1dG89/Zm9ybWF0JmZpdD1j/cm9wJml4bGliPXJi/LTQuMC4zJml4aWQ9/TTN3eE1qQTNmREI4/TUh4elpXRnlZMmg4/Tlh4OGRtbGtaVzlu/Y21Gd2FIbDhaVzU4/TUh4OE1IeDhmREE9">
+                    <div class="layer">
+                        <h3>1st Project</h3>
+                        <a href="https://drive.google.com/file/d/1FdMzd3qUS1ut_DTO8ugv9OJeBV5Ur3B6/view?usp=drive_link"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/h3CY0InJVmsrURf_atPWYMnt3vCLkSD-QIcx25bGc3c/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/YWRvcmFtYS5jb20v/YWxjL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE4LzA4L3NodXR0/ZXJzdG9ja181NzU4/NjIzODIuanBn" sizes="60%">
+                    <div class="layer">
+                        <h3>2nd Project</h3>
+                        <a href="https://drive.google.com/file/d/13xjR2qtbTlhnCJlfH3JYDkEv9PfWDAIF/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://imgs.search.brave.com/ci2YgAy-onqHiX8_54YSVSIuZgOrxDVCsbND3PwT31w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE0/OTI2MTkxOTMzNjkt/YWYyMzUyNTMxNDQz/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRKOGZI/WnBaR1Z2SlRJd1pX/UnBkR2x1WjN4bGJu/d3dmSHd3Zkh4OE1B/PT0">
+                    <div class="layer">
+                        <h3>3rd Project</h3>
+                        <a href="https://drive.google.com/file/d/1vU9UReVr0saIo-HTsf1KqAyUY_tXr2rz/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Joydeep-dasgupta-2003" class="btn">See More </a>
+        </div>
+    </div>
+    <!-- contact information -->
+    <div id="contact">
+        <div class="container">
+            <div class="row1">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a class="cont"
+                            href="mailto:daspurba534@gmail.com">daspurba534@gmail.com</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/purba-das-4484121b4/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Purba-Das-2004"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright This Website is Made By Purba©️</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
